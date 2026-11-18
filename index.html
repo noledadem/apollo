@@ -136,7 +136,7 @@ body.open .drawer{transform:none}
   </section>
 </main>
 
-<footer><span>Apollo &copy; 2026</span><span>Trang demo cho bài tập, không bán hàng thật</span></footer>
+<footer><span>Apollo &copy; 2026</span><span>Trang này chỉ nhầm mục đích làm bài tập</span></footer>
 
 <div class="veil" id="veil"></div>
 <aside class="drawer" aria-label="Giỏ hàng">
@@ -179,7 +179,7 @@ const tg=o=>document.body.classList.toggle('open',o);
 $('open').onclick=()=>tg(true);$('close').onclick=()=>tg(false);$('veil').onclick=()=>tg(false);
 document.onkeydown=e=>{if(e.key==='Escape'){tg(false);closeM()}};
 $('buy').onclick=()=>{if(!Object.keys(cart).length)return toast('Giỏ hàng đang trống');
- for(const k in cart)delete cart[k];draw();tg(false);toast('Đặt hàng thành công (demo)')};
+ for(const k in cart)delete cart[k];draw();tg(false);toast('Đặt hàng thành công')};
 draw();
 </script>
 </body>
